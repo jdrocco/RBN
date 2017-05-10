@@ -1,0 +1,14 @@
+#!/bin/csh
+#PBS -N RBNst14
+#PBS -jeo
+#PBS -l nodes=1:ppn=1
+
+setenv RUN_DIR $PBS_O_WORKDIR
+
+cd $RUN_DIR
+
+hostname
+pwd
+
+../seqRBNlingauss
+
